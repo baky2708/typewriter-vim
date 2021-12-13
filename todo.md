@@ -1,0 +1,4 @@
+- md preview
+- organize files
+- organize text files
+- add airline and buffers

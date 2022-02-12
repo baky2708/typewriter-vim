@@ -1,16 +1,17 @@
 if filereadable("/etc/vimrc")
   source /etc/vimrc
 endif
+
+let path = 
+echo path
 let mapleader = " "
 colo typewriter
 set relativenumber
-set runtimepath^=~/02-me/typewriter/vim-base/plugins
+set runtimepath^=~/02-me/vim/typewriter/vim-base/plugins
 set ttyfast
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
 
 function! PlaySound()
-  silent! exec '!aplay -q ~/02-me/typewriter/key01.aiff &'
+  silent! exec '!aplay -q ~/02-me/vim/typewriter/sounds/key01.aiff &'
 endfunction
 autocmd CursorMovedI * call PlaySound()

@@ -2,8 +2,6 @@ if filereadable("/etc/vimrc")
   source /etc/vimrc
 endif
 
-let path = 
-echo path
 let mapleader = " "
 colo typewriter
 set relativenumber
